@@ -1,7 +1,18 @@
 ## Solution for lab1
 
 
-1. Create namespace named secret
+1. Get all the namespaces in k8s 
+
+<details>
+
+<summary></summary>
+
+`kubectl get namespaces`
+
+</details>
+
+
+2. Create namespace named secret
 
 
 <details>
@@ -13,18 +24,7 @@
 </details>
 
 
-2. Get all the namespaces in k8s 
-
-<details>
-
-<summary></summary>
-
-`kubectl get namespaces`
-
-</details>
-
-
-3. Use describe command for the namespace created
+3. Get details of the namespace created
 
 <details>
 
@@ -35,7 +35,7 @@
 </details>
 
 
-4. Create a pod names nginx-demo with image nginx with tag 1.42
+4. Create a pod named nginx-demo with image nginx, using the tag 1.42
 
 <details>
 
@@ -46,7 +46,7 @@
 </details>
 
 
-5. Get the status of pod created above and see if it is running (if not debug using the describe command and check for the error reason)
+5. Get the status of pod created above and see if it is running (if not debug and try to find the root cause)
 
 <details>
 
@@ -74,8 +74,7 @@ To get more info about diff between error ImagePullBackOff and ErrImagePull refe
 </details>
 
 
-7. Create a new pod with name nginx-secret under namespace secret (created in step 1)
-   use image nginx with tag 1.22-bullseye
+7. Create a pod named nginx-secret, using the image nginx with tag 1.22-bullseye in secret namespace.
 
 <details>
 
@@ -86,7 +85,7 @@ To get more info about diff between error ImagePullBackOff and ErrImagePull refe
 </details>
 
 
-8. Check the status of the pod created
+8. Check the status of nginx-secret pod.
 
 <details>
 
@@ -99,7 +98,7 @@ To get more info about diff between error ImagePullBackOff and ErrImagePull refe
 </details>
 
 
-9. Delete the namespace secret (use command kubectl delete)
+9. Remove the namespace secret
 
 <details>
 
@@ -110,7 +109,7 @@ To get more info about diff between error ImagePullBackOff and ErrImagePull refe
 </details>
 
 
-10. Try to get the pod under namespace secret 
+10. Get POD(s) under namespace named secret
 (if not try to think what happen to all the resources if namespace is deleted)
 
 <details>
