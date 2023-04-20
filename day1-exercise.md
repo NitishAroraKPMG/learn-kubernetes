@@ -1,4 +1,4 @@
-## Solution for lab1
+## Lab 1
 
 
 1. Get all the namespaces in k8s 
