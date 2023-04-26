@@ -1,8 +1,8 @@
-## Day 3
+# Day 3
 
 ## We have probes PPT in the day 3 folder for more details
 
-## Probes in pods
+# Probes in pods
 
 When we have our server live and running there are certain scenarios where our server might not work as expected.
 
@@ -16,7 +16,7 @@ Most of the time problem can be solved using a simple restart and if server is d
 
 In order to handle given scenario kubernates provides us with prods. If a probe fails system will stop sending the requests to the server or it will restart it depending upon the type of probe. But all the things will be handled automatically. 
 
-# Following YMAL is being used for the probes
+### Following YMAL is being used for the probes
 
 ```
 apiVersion: v1
