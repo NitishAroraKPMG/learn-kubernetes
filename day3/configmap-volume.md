@@ -119,5 +119,7 @@ spec:
 
 There are only just few additions from the previous yaml file.
 Once we have applied the yaml, In our pod we will be able to see a config folder which will have all the config values as files
-It will include both type of values 1. Created from literal 2. Created using the file
+It will include both type of values 
+1. Created from literal 
+2. Created using the file
 Our application can easily use config from volume.

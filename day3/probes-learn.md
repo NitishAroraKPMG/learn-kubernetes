@@ -8,7 +8,7 @@ When we have our server live and running there are certain scenarios where our s
 
 e.g.
 1. Pod working from a very long time, it might become un-responsive.
-2. Our application code has a lots of bugs which causes server to crash frequently.
+2. Our application code has bugs which causes server to crash.
 3. Our application is doing a very heavy and long processing due to which server is not ready to accept new requests.
 
 In all above given scenarios, If a user sent a request to the given pod. It will only show an error to the user. So there is no point sending traffic to the pod. 
