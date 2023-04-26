@@ -1,16 +1,16 @@
-## configmap volumes
+## Configmap volumes
 
 In this tutorial we are going to see how we can use config maps as volumes. 
 
 Topic of discussion
 
-* Configmap
+### Configmap
 
 Configmaps are great way to store non essential information in key-value pair, Pods can utilise this information as enviornment variables, command-line params and as configration files as volumes.
 
 We can pass on files as configs using configmap volumes, which later can be used by application image inside the pod.
 
-* Creating configmaps
+### Creating configmaps
 
 First step will be to create a configmap, 
 
@@ -28,7 +28,7 @@ We can check the created config map by using following command
 
 We can see the details for the configmap.
 
-* Passing configmaps to pods
+### Passing configmaps to pods
 
 Please follow the following yaml file
 
@@ -63,11 +63,9 @@ spec:
   restartPolicy: Always
 ```
 
-You will see in the env we have given our config map params which were created from literal
+You will see in the env we have given our config map params which were created from literal. 
 
-We are using a already build image kuard for this demo which gives a lots of facalities out of the box.
-
-We can directly apply the file and expose the port by using following commands to see the pod details.
+We are using a already build image kuard for this demo which gives a lots of facalities out of the box. We can directly apply the file and expose the port by using following commands to see the pod details.
 
 `kubectl apply -f configmap.yaml`
 
@@ -77,7 +75,7 @@ then forward the port to created pod
 
 Now if you will go to `http:\\localhost:8080` under env section you can see the variables.
 
-* Passing configmaps as volumes in kubernates
+### Passing configmaps as volumes in kubernates
 
 Check the following yaml code. You will notice we have create a volume using config map. Once volume is created we have assigned that volume to our pod.
 

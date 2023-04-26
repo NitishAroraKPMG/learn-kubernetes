@@ -50,7 +50,7 @@ then forward the port to created pod
 
 `kubectl port-forward kuard-config 8080`
 
-* Types of probes
+### Types of probes
 
 We have mainly three types of probes
 
@@ -95,7 +95,7 @@ There can be scenarios when we want to complete the startup process of pod and o
 We take a worst case scenario for the pod startup and define `failureThreshold` so `failureThreshold * periodSeconds` shall be equal to seconds taken in worst case scenario.
 
 
-* Other settings we can use in the probes
+### Other settings we can use in the probes
 
 1. InitialDelayseconds : Set a delay between the time the container starts and the first time the probe is executed. Defaults to zero seconds.
 2. PeriodInSeconds: Defines how frequently the probe will be executed after the initial delay. Defaults to ten seconds.timeoutSeconds: Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1.
